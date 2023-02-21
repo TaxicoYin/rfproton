@@ -1,0 +1,10 @@
+#!/bin/sh
+if [ ! "$UID" == "0" ]
+then 
+	echo root privilege required,try \"sudo ./uninstall\",exit now...
+	exit
+fi
+. ./setting
+rm -f /usr/bin/proton
+rm -rf $installdir
+echo uninstall complete 

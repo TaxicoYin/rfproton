@@ -1,0 +1,18 @@
+#!/bin/bash
+runpath=$(cd `dirname $0`; pwd)
+if [ `readlink $runpath/$(basename $0)` ]
+then
+	runpath=$(dirname `readlink $runpath/$(basename $0)`)
+fi
+if [ ! "$PROTONPREFIX" ]
+then
+	export PROTONPREFIX=$HOME/.proton
+fi
+export STEAM_COMPAT_DATA_PATH="$PROTONPREFIX"
+if [ ! -d $PROTONPREFIX ];then
+mkdir $PROTONPREFIX
+fi
+export STEAM_COMPAT_CLIENT_INSTALL_PATH="$HOME"/.proton
+$runpath/proton.py "$@"
+export WINEPREFIX=$PROTONPREFIX/pfx
+$runpath/files/bin/wine  "$@"

@@ -1,0 +1,3 @@
+#!/bin/sh
+sourcedir="GE-Proton*"
+installdir="/opt/rfproton"
