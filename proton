@@ -12,7 +12,7 @@ export STEAM_COMPAT_DATA_PATH="$PROTONPREFIX"
 if [ ! -d $PROTONPREFIX ];then
 mkdir $PROTONPREFIX
 fi
-export STEAM_COMPAT_CLIENT_INSTALL_PATH="$HOME"/.proton
+export STEAM_COMPAT_CLIENT_INSTALL_PATH="$PROTONPREFIX"
 $runpath/proton.py "$@"
 export WINEPREFIX=$PROTONPREFIX/pfx
 $runpath/files/bin/wine  "$@"
