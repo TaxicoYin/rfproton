@@ -5,14 +5,11 @@ then
 	echo "root privilege required!try \"sudo ./install \" now exit..."
 	exit
 fi
-cd ./$sourcedir
-mv proton proton.py
-cd ..
-cp proton ./$sourcedir
-chmod +x ./proton
 cp -rp $sourcedir $installdir
+cp -p $sourcedir/proton $installdir/proton.py
+cp -pf proton $installdir
+chmod +x $installdir/proton
 chmod -R 755 $installdir
 ln -s $installdir/proton /usr/bin
 echo install complete
 echo useage : proton run {path to exe}
-
