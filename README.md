@@ -2,6 +2,7 @@
 This program is designed to run proton without steam which is  based on another program on github: https://github.com/GloriousEggroll/proton-ge-custom  
 (test on GE-Proton7-49)
 (test on GE-Proton8-11) 23/8/18
+(test on GE-Proton8-23) 23/11/9
 
 ---
 
