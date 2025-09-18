@@ -14,7 +14,7 @@ This program is designed to run proton without steam which is  based on another 
 3. `chmod +x install`
 4. `./install`
    
-or you can just `chmod +x update` and `./update`,it should auto download newest GE version for you
+or you can just `chmod +x update` and `./update`,it should auto download newest GE version for you    
 ---
 ## useage:
 proton run {path to exe} 
