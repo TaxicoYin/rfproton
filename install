@@ -1,15 +1,28 @@
 #!/bin/sh
 . ./setting
 if [ ! "$UID" == "0" ]
-then 
+then
 	echo "root privilege required!try \"sudo ./install \" now exit..."
-	exit
+	exit 1
 fi
-cp -rp $sourcedir $installdir
-cp -p $sourcedir/proton $installdir/proton.py
-cp -pf proton $installdir
-chmod +x $installdir/proton
+count=`ls |grep GE-Proton*.tar.gz|wc -l`
+if [ "$count" == "1" ]
+then
+	tar zxf `ls |grep GE-Proton*.tar.gz`
+	mv GE-Proton*/ ./GE-Proton/
+else
+	echo "need only a newst tarball file version of GE-Proton!"
+	exit 1
+fi
+if [ ! -d $installdir ];then
+  mkdir $installdir
+fi
+cp -rpf $sourcedir $installdir
+cp -pf $sourcedir/proton $installdir/$sourcedir/proton.py
+cp -pf proton $installdir/$sourcedir
+chmod +x $installdir/$sourcedir/proton
 chmod -R 755 $installdir
-ln -s $installdir/proton /usr/bin
+ln -s $installdir/$sourcedir/proton /usr/bin
+rm -rf GE-Proton
 echo install complete
 echo useage : proton run {path to exe}
