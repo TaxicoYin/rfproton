@@ -12,7 +12,7 @@ This program is designed to run proton without steam which is  based on another 
 1. download release  version of protonGE on https://github.com/GloriousEggroll/proton-ge-custom/releases 
 2. put downloaded GE-Proton-*.tar.gz file inside project folder
 3. `chmod +x install`
-4. `./install`
+4. `./install`    
 or you can just `chmod +x install` and `./update`,it should auto download newest GE version for you
 ---
 ## useage:
