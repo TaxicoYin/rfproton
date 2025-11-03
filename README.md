@@ -4,7 +4,7 @@ This program is designed to run proton without steam which is  based on another 
 (test on GE-Proton8-11) 23/8/18   
 (test on GE-Proton8-23) 23/11/9   
 (test on GE-Proton10-15) 25/9/18  
-(test on GE-Proton10-15) 25/9/18
+(test on GE-Proton10-15) 25/9/18  
 (test on GE-Proton10-25) 25/11/3
 
 ---
