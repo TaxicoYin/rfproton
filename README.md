@@ -31,6 +31,7 @@ or you can just `chmod +x update` and `./update`,it should automatically downloa
 proton run {path to exe}     
      
 使用方法:打开终端输入proton run {程序exe路径}     
+    
 ---
 PROTONPREFIX  
 PROTON will create a folder to  emulate the windows file system which is used to run .exe file ,it is locate in ~/.proton by default.
