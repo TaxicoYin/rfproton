@@ -1,7 +1,7 @@
 # README
 This program is designed to run proton without steam which is  based on another program on github: https://github.com/GloriousEggroll/proton-ge-custom  
 This typically used for someone using steamdeck and want run some windows software or games besides of steam games.   
-该程序旨在无需 Steam 就能运行 Proton，它基于 GitHub 上的另一个程序：https://github.com/GloriousEggroll/proton-ge-custom。     
+该程序旨在无需 Steam 就能运行 Proton，它基于 GitHub 上的另一个程序：https://github.com/GloriousEggroll/proton-ge-custom      
 通常，这适用于使用 Steam Deck 并希望运行一些除 Steam 游戏外的 Windows 软件或游戏的用户。
 
 (test on GE-Proton7-49)  
@@ -29,9 +29,8 @@ or you can just `chmod +x update` and `./update`,it should automatically downloa
 你也可以直接 `chmod +x update` 然后 `./update`，它会自动为你下载最新的 GE 版本   
 ## useage:      
 proton run {path to exe}     
-
-使用方法：   
-打开终端输入proton run {程序exe路径}     
+     
+使用方法:打开终端输入proton run {程序exe路径}     
 ---
 PROTONPREFIX  
 PROTON will create a folder to  emulate the windows file system which is used to run .exe file ,it is locate in ~/.proton by default.
