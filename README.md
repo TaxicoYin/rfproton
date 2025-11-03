@@ -27,11 +27,12 @@ or you can just `chmod +x update` and `./update`,it should automatically downloa
 4. `./install`   
 ## 或者
 你也可以直接 `chmod +x update` 然后 `./update`，它会自动为你下载最新的 GE 版本   
-## useage:
-## 使用方法： 
-proton run {path to exe} 
-打开终端输入proton run {程序exe路径}     
+## useage:      
+proton run {path to exe}     
 
+使用方法：   
+打开终端输入proton run {程序exe路径}     
+---
 PROTONPREFIX  
 PROTON will create a folder to  emulate the windows file system which is used to run .exe file ,it is locate in ~/.proton by default.
 you can change it's emulate environment by useing "winecfg" for example `WINEPREFIX=~/.proton/pfx winecfg`    
