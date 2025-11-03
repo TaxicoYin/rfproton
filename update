@@ -13,7 +13,8 @@ else
         echo "version:$version"
         exit 0
     else
-        echo New version found :$version
+         echo New version found :$version
+         echo "Local version:$local_version"
     fi
         echo "update? [y/n]"
 fi
@@ -23,7 +24,7 @@ if [ -e "$version.tar.gz" ]; then
     echo "Local file detected,using it"
 else
     rm -rf GE-Proton*.tar.gz
-    echo "Downloading update file"
+    echo "Downloading file..."
     wget $tarball_url
 fi
     sudo ./install
